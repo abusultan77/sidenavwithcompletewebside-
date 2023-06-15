@@ -1,0 +1,443 @@
+.kycmodal {
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 476px;
+
+        .modal-content {
+            background: linear-gradient(0deg, #20242B, #20242B),
+                linear-gradient(0deg, #2B2F37, #2B2F37);
+            border: 1px solid #2B2F37;
+            border-radius: 6px;
+            padding: 30px 30px;
+            margin: 0 auto;
+
+            .modal-header {
+                border-bottom: none;
+                padding: 0px;
+                margin-bottom: 30px;
+
+                .modal-title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                .btn-close {
+                    background: url('../../Assets/close-circle-white.svg');
+                    opacity: unset;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    padding: 0px;
+                    margin: 0px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .modal-body {
+                padding: 0px;
+
+                .whitetext {
+                    font-family: 'sdark';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+                    text-align: center;
+                    margin-top: 30px;
+                    padding-bottom: 14px;
+                }
+
+                .mainupload {
+                    height: 206px;
+                    width: 100%;
+                    border: 1px dashed #30343A;
+                    border-radius: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .idcardimg {
+                        width: 287px;
+                        height: 183px;
+                    }
+
+                    .uploadpara {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        color: #8A8C90;
+
+                        span {
+                            color: #4C9540;
+                        }
+                    }
+                }
+
+                .upperfront {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 19px;
+
+                    .rightidpara {
+                        font-family: 'Rajdhani';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #8A8C90;
+                    }
+
+                    .left {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 8px;
+
+                        .idlefttext {
+                            font-family: 'Rajdhani';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 120%;
+                            color: #FFFFFF;
+                        }
+
+                        .idimg {
+                            width: 20px;
+                            height: 15px;
+                        }
+                    }
+                }
+
+                .maintextfield {
+                    .formargin:focus+label {
+                        color: #4C9540;
+                    }
+
+                    .formargin {
+                        background: #20242A;
+                        border: 1px solid #2B2F35;
+
+                        &::placeholder {
+                            color: #494C54;
+                        }
+                    }
+
+                    .formarginlabel {
+                        background: #20242A;
+                        color: #494C54;
+                    }
+                }
+
+                .countriesmain {
+                    background: #20242A;
+                    border: 1px solid #2B2F35;
+                    border-radius: 6px;
+                    max-height: 336px;
+                    height: 100%;
+                    overflow-x: auto;
+                    margin-top: 10px;
+                    margin-bottom: 14px;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .countriesinner {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 11px;
+                        padding: 13px 20px;
+                        border-bottom: 1px solid #2B2F35;
+                        cursor: pointer;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        &:hover {
+                            background: #2A2F36;
+                        }
+
+                        .countriesimg {
+                            width: 30px;
+                            height: 30px;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: 120px;
+
+                            .countriesimginner {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                                border-radius: 120px;
+                            }
+                        }
+
+                        .countrieshead {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 100%;
+                            letter-spacing: 0.1px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .compliancemain {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 20px;
+                    gap: 5px;
+                    max-width: 304px;
+                    width: 100%;
+                    margin: 0 auto;
+                    background: #20242A;
+                    border: 1px solid #2B2F35;
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+
+                    .compliancehead {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 100%;
+                        color: #FFFFFF;
+                    }
+
+                    .compliancepara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 100%;
+                        color: #8A8C90;
+                    }
+                }
+
+                .successtexts {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    flex-direction: column;
+                    padding: 30px 0px;
+
+                    .mediumpara {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 125%;
+                        text-align: center;
+                        color: #AEAFB3;
+                    }
+
+                    .successhead {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: #FFFFFF;
+                    }
+
+                    .successpara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 125%;
+                        color: #8A8C90;
+                        text-align: center;
+                    }
+                }
+
+                .permissionpara {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 100%;
+                    color: #8A8C90;
+                    padding: 30px 0px;
+                }
+
+                .livenesstexts {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 5px;
+                    padding: 30px 0px;
+
+                    .livenesshead {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: #FFFFFF;
+                    }
+
+                    .livenesspara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 125%;
+                        color: #8A8C90;
+                    }
+                }
+
+                .backpara {
+                    font-family: 'sdark';
+                    font-style: normal;
+                    font-size: 10px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #8A8C90;
+                    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+                    text-align: center;
+                    width: 100%;
+                    padding-top: 16px;
+                }
+
+                .uppercheckboxpara {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 9px;
+                    padding: 30px 0px;
+
+                    .checkboxpara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 110%;
+                        color: #8A8C90;
+
+                        span {
+                            color: #4C9540;
+                        }
+                    }
+                }
+
+                .capturingmain {
+                    border: 1px solid #2B2F35;
+                    border-radius: 6px;
+                    height: 416px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .capturingmainimage {
+                        background-image: url('../../Assets/linearcircle.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        width: 266px;
+                        height: 266px;
+                        object-fit: cover;
+                        object-position: center;
+                        position: relative;
+
+                        .capturinginnerimg {
+                            position: absolute;
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 120px;
+                            object-fit: cover;
+                            object-position: center;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+
+                .kyctop {
+                    border: 1px solid #2B2F35;
+                    border-radius: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 202px;
+                }
+
+                .kycpara {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 100%;
+                    color: #8A8C90;
+                    padding: 30px 0px;
+                }
+
+                .methodmain {
+                    border: 1px solid #2B2F35;
+                    border-radius: 6px;
+                    margin-bottom: 30px;
+
+                    .methodinner {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 20px;
+                        gap: 12px;
+                        border-bottom: 1px solid #2B2F35;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        .methodtexts {
+                            .methodhead {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 120%;
+                                color: #FFFFFF;
+                            }
+
+                            .methodpara {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 125%;
+                                color: #8A8C90;
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .kycmodal .modal-dialog .modal-content {
+        padding: 30px 20px;
+    }
+
+    .kycmodal .modal-dialog .modal-content .modal-header .modal-title {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}

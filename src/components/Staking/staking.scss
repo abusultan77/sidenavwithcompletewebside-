@@ -1,0 +1,1078 @@
+.staking-info-wrapper {
+    padding: 20px 30px;
+    border-radius: 6px;
+    background: #191B21;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+
+    .staking-info-item.first-item {
+        margin-left: 0px;
+
+        .staking-info-text-detail {
+            .staking-info-heading {
+                color: #FECA37;
+            }
+        }
+    }
+
+    .staking-info-item {
+        display: flex;
+        min-width: 216.8px;
+        margin: 0px 20px;
+        align-items: center;
+
+        img {
+            margin-right: 20px;
+        }
+
+        .staking-info-text-detail {
+            .staking-info-text {
+                font-family: 'Rajdhani';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                color: #8A8C90;
+                margin-bottom: 15px;
+            }
+
+            .staking-info-heading {
+                font-family: 'Rajdhani';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+// staking info
+
+.stake-time-line-wrapper-main {
+    justify-content: space-between;
+
+    .stake-time-line-wrapper {
+        // width: 228px;
+        width: 260px;
+    }
+
+    .stake-time-line-data {
+        width: 560px;
+    }
+
+    .stake-findes-col {
+        width: 500px;
+    }
+
+}
+
+.maintabs {
+    margin-bottom: 20px;
+}
+
+.tabs-wrapper {
+    border: 1px solid #262930;
+    border-radius: 6px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 25px;
+
+    .nav-item {
+        .nav-link {
+            padding: 0px;
+            width: 157px;
+            text-align: center;
+            margin-bottom: 0px;
+
+            .outerbtn-green-btnonewidthnew {
+                height: 44px;
+
+                .innerbtn {
+                    height: 38px;
+
+                    .btntext {
+                        font-family: "sdark";
+                        font-style: normal;
+                        font-size: 10px;
+                        line-height: 45px;
+                        text-transform: capitalize;
+                        text-shadow: 0px 1px 0px #00000040;
+                        margin: 0px 10px;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        color: #8A8C90;
+                    }
+                }
+            }
+        }
+
+        .nav-link.active {
+            background: none;
+            padding: 0px;
+
+            .outerbtn-green-btnonewidthnew {
+                // height: 44px;
+                background: #0b3704;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 1px;
+
+                .innerbtn {
+                    // height: 38px;
+                    background: linear-gradient(180deg, #69c05a 0%, #469239 100%);
+                    box-shadow: 0px 2px 0px #35762a;
+                    border-radius: 3px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    padding: 1px;
+
+                    &:hover {
+                        .btnspan {
+                            height: 28px;
+                            transition: 0.7s;
+                        }
+                    }
+
+                    .btntext {
+                        font-family: "sdark";
+                        font-style: normal;
+                        font-size: 10px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        text-shadow: 0px 1px 0px #00000040;
+                        margin: 0px 10px;
+                        cursor: pointer;
+                        white-space: nowrap;
+                    }
+
+                    .btnspan {
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.27) 100%);
+                        filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.01));
+                        border-radius: 5px;
+                        height: 17px;
+                        position: absolute;
+                        width: 100%;
+                        top: 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// timeline steps
+
+.item-bg-color {
+    background: #191B21;
+    border-radius: 6px;
+    // padding: 0px;
+}
+
+.section-header {
+    text-align: left;
+    padding: 20px;
+}
+
+.section-header h2 {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section-header hr {
+    border: 1px solid #fff;
+    width: 56px;
+}
+
+.bg-gradient_solid {
+    background: var(--primary-gradient);
+    padding: 0px 0 19px 0;
+    color: #fff;
+    min-height: 428px;
+
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.steps {
+    position: relative;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid #212529;
+}
+
+.steps::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: white;
+    opacity: 0.4;
+    top: 25px;
+    bottom: 0;
+    left: 11%;
+    height: 80%;
+}
+
+.steps .content p {
+    // color: #676767;
+    // font-size: 16px;
+
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 110%;
+    color: #8A8C90;
+}
+
+.steps .content .active-time-line {
+    color: #4C9540;
+}
+
+.steps .content h2 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #676767;
+    cursor: pointer;
+}
+
+.steps-container {
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+.steps-container .content {
+    padding: 0px 10px 13px 35px;
+    // background-color: white;
+    position: relative;
+    // border-radius: 0px 0px 80px 0px;
+    // box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
+}
+
+// .steps .steps-container:nth-child(even) {
+//     left: calc(50% - 32px);
+//     flex-direction: row-reverse;
+// }
+
+.steps-container {
+    display: flex;
+}
+
+.steps .steps-container .date {
+    width: 30px;
+    height: 30px;
+    background-color: #191B21;
+    position: absolute;
+    left: -1%;
+    top: 0%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    .date-inner {
+        width: 22px;
+        height: 22px;
+        padding-top: 1px;
+        border-radius: 60px;
+        border: 1.5px solid #2B2F35;
+        font-weight: 900;
+        font-size: 14px;
+        color: #ffffff;
+        flex-shrink: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .date-inner-complete.date-inner {
+        background: #4C9540;
+        color: white;
+    }
+
+    .date-inner-process {
+        border: 1.5px solid #4C9540;
+        color: #4C9540;
+    }
+}
+
+.step-line {
+    width: 40px;
+    background-color: #fff;
+    height: 1px;
+    margin-top: 31px;
+    opacity: 0.4;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1450px) {
+    .stake-time-line-wrapper-main {
+        justify-content: space-between;
+
+        .stake-time-line-wrapper {
+            // width: 228px;
+            width: 260px;
+        }
+
+        .stake-time-line-data {
+            width: 525px;
+        }
+
+        .stake-findes-col {
+            width: 500px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .maintabs {
+        .staking-info-wrapper {
+            justify-content: space-between;
+
+            .staking-info-item {
+                width: auto;
+                min-width: fit-content;
+
+                .staking-info-text-detail {
+                    .staking-info-heading {
+                        font-family: 'Rajdhani';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        // color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    .stake-time-line-wrapper-main {
+        justify-content: space-between;
+
+        .stake-time-line-wrapper {
+            // width: 228px;
+            width: 100%;
+            margin-bottom: 15px;
+
+            .steps-container .content {
+                padding: 0px 10px 30px 35px;
+                position: relative;
+            }
+
+            .steps::after {
+                left: 22.5px;
+            }
+        }
+
+        .stake-time-line-data {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .stake-findes-col {
+            width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: 769px) {
+
+    .bg-gradient_solid {
+        min-height: auto;
+        margin-bottom: 15px;
+        height: fit-content;
+    }
+
+    .maintabs {
+        .staking-info-wrapper {
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .staking-info-item {
+                width: auto;
+                min-width: 28%;
+                margin-bottom: 20px;
+
+                .staking-info-text-detail {
+                    .staking-info-heading {
+                        font-family: 'Rajdhani';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        // color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .steps::after {
+        left: 24px;
+    }
+
+    .steps-container {
+        left: 0;
+        // flex-direction: row-reverse;
+
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    // .steps .steps-container:nth-child(even) {
+    //     left: 0;
+    // }
+}
+
+@media only screen and (max-width: 600px) {
+    .staking-info-wrapper .staking-info-item{
+        margin: 0px 10px;
+    }
+    .tab-part-2 .unstaking-part .tab22-body .unstakeAmount-buttons .forwidthhhhhh{
+        width: 100% !important;
+    }
+    .tab-part-2 {
+        padding: 20px !important;
+
+        .unstaking-part .tab22-body {
+            .unstakeAmount-buttons {
+                .my-btn {
+                    width: 48% ;
+                    margin: 40px auto 20px auto !important;
+                }
+            }
+
+            .unstake-amount-input {
+                margin-bottom: 10px;
+            }
+
+            .current-blance-text-flex {
+                flex-direction: column;
+                align-items: flex-start !important;
+
+                p {
+                    margin-top: 5px !important;
+                }
+            }
+        }
+    }
+
+    .steps-container .content {
+        // padding: 0px 10px 26px 0px;
+    }
+
+    .stake-time-line-wrapper-main .stake-time-line-wrapper .steps::after {
+        left: 26.5px;
+    }
+
+    .maintabs {
+        .staking-info-wrapper {
+            padding: 10px 10px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .staking-info-item.first-item {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .staking-info-item {
+                width: auto;
+                min-width: 25%;
+                margin-bottom: 20px;
+                width: 43%;
+                white-space: nowrap;
+
+                .staking-info-text-detail {
+                    .staking-info-heading {
+                        font-family: 'Rajdhani';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        // color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+
+        .tabs-wrapper {
+            justify-content: space-between;
+            width: 100%;
+
+            .nav-item {
+                .nav-link {
+                    min-width: 100px;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+    body .tab-part-2 .tab22-wrapperrr .tab22-body {
+        .tab22-body-btn {
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                width: 90%;
+                text-align: left;
+                margin-top: 8px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+
+// tab-part-2
+.tab-part-2.unstaking-part-main {
+    padding: 30px 30px 5px 30px;
+    min-height: 428px;
+}
+
+.staking-inner-tabs-col {
+    // max-height: 428px;
+    height: 100%;
+    min-height: 240px;
+}
+
+.unstake-amount-input .material-textfield input:focus+label {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #4C9540;
+}
+
+.unstake-amount-input {
+
+    .new-text {
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        color: #4C9540;
+        position: absolute;
+        right: 15px;
+        top: 17px;
+        z-index: 99;
+    }
+
+    .StakeEnterAmount-input {
+        position: relative;
+
+        .white-placehoder::placeholder {
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 125%;
+            color: #494C54;
+        }
+
+        p {
+            position: absolute;
+            right: 15px;
+            top: 17px;
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            color: #4C9540;
+            z-index: 99;
+        }
+    }
+}
+
+.tab-part-2 {
+    padding: 30px 30px 40px 30px;
+    color: white;
+
+    .unstaking-part {
+        .tab22-body {
+
+            .unstake-amount-input {
+                margin-top: 50px;
+
+                .material-textfield input:not(:placeholder-shown) + label{
+                    color: #4C9540;
+                }
+
+                .material-textfield {
+                    input {
+                        padding: 17px 40px 17px 18px;
+                        padding-right: 60px !important;
+                    }
+
+                    .position-abs {
+                        position: absolute;
+                        cursor: pointer;
+                        right: 15px;
+                        top: 17px;
+                        z-index: 99;
+                    }
+
+                }
+            }
+
+            .current-blance-text {
+                p {
+                    font-family: 'Rajdhani';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 120%;
+                    margin-top: 15px;
+                    text-align: right;
+                    color: #FFFFFF;
+                }
+            }
+
+            .complete-textttxxx {
+                p {
+                    font-family: 'Rajdhani';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 120%;
+                    margin-top: 15px;
+                    text-align: left;
+                    color: #4C9540;
+                }
+            }
+
+
+            .current-blance-text-flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .left-text {
+                    font-family: 'Rajdhani';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 120%;
+                    display: flex;
+                    align-items: center;
+                    color: #8A8C90;
+
+                    a {
+                        color: #4C9540;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            h5 {
+                font-family: 'Rajdhani';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+                color: #4C9540;
+                margin-bottom: 10px;
+            }
+
+            .warning-policy-item {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: flex-start;
+
+                .form-check {
+
+                    input:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+
+                    input[type=checkbox]:not(:checked) {
+                        background: #15181D;
+                        border: 1px solid #2D3138;
+                        border-radius: 3px;
+                    }
+
+                    input[type=checkbox] {
+                        position: relative;
+                        cursor: pointer;
+                        background: #4C9540;
+                        border-color: #4C9540;
+                    }
+
+                    // input[type=checkbox]:before {
+                    //     content: "";
+                    //     display: block;
+                    //     position: absolute;
+                    //     width: 16px;
+                    //     height: 16px;
+                    //     top: 0;
+                    //     left: 0;
+                    //     border: 1px solid #99AFC1;
+                    //     border-radius: 3px;
+                    //     background-color: #00AEEF;
+                    //     padding: 1px;
+                    // }
+
+                    input[type=checkbox]:checked:after {
+                        content: "";
+                        display: block;
+                        width: 5px;
+                        height: 8px;
+                        border: solid white;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        top: 1.7px;
+                        left: 5px;
+                    }
+                }
+
+                .form-check {
+                    input {
+                        margin-top: 8px;
+                    }
+                }
+
+                label {
+                    p {
+                        font-family: 'Rajdhani';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 125%;
+                        display: flex;
+                        align-items: center;
+                        color: #8A8C90;
+                    }
+                }
+            }
+
+            .unstakeAmount-buttons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+
+                .my-btn {
+                    width: 49%;
+                    margin: 50px auto;
+
+                    .innerbtn {
+                        .btntext {
+                            font-family: "sdark";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 45px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tab22-wrapperrr {
+
+        .tab22-headder {
+            margin-bottom: 25px;
+
+            h3 {
+                font-family: 'Rajdhani';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-family: 'Rajdhani';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 120%;
+                color: #8A8C90;
+            }
+        }
+
+        .tab22-body {
+            width: 100%;
+
+            .tab22-body-btn {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background: #1C1E24;
+                border-radius: 4px;
+                border: none;
+                color: white;
+                margin: 10px 0px;
+                font-family: 'Rajdhani';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+
+                .tab22-body-btn-media {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                p {
+                    font-family: 'Rajdhani';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                }
+
+            }
+
+            .connect-wallet-btn {
+                p {
+                    color: #4C9540;
+                }
+            }
+
+            .available-wallet-btn {
+                p {
+                    width: 50%;
+                    padding-left: 10px;
+                    font-family: 'Rajdhani';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #8A8C90;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+// part 3 
+
+.current-staking-info {
+    .current-staking-data {
+        padding: 25px 30px;
+        margin-bottom: 10px;
+
+        p {
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            color: #8A8C90;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+    }
+}
+
+.checkbox-wrapper {
+    .radio-btnn-oter-div {
+        label {
+            .stake-input {
+                display: flex;
+                align-items: flex-start;
+
+                p {
+                    font-family: 'Rajdhani';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 110%;
+                    color: #8A8C90;
+                    margin-left: 7px;
+                    margin-top: 5px;
+
+                    a {
+                        color: #4C9540;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-check {
+        .form-check-label {
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 110%;
+            display: flex;
+            align-items: center;
+            color: #8A8C90;
+
+            a {
+                color: #4C9540;
+            }
+        }
+    }
+}
+
+// end stake 
+
+.ranks-wrapper {
+    background: #191B21;
+    border-radius: 6px;
+    padding: 20px 0 40px 0px;
+
+    .table-wrapper-comp {
+        width: 80%;
+        margin: 0 auto;
+
+        .table-responsive {
+            .table {
+                // color: white;
+                font-family: 'Rajdhani';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #8A8C90;
+
+                thead {
+                    tr {
+                        th {
+                            border-color: #191b21;
+                        }
+
+                        .green-pepe {
+                            h6 {
+                                font-weight: 700 !important;
+                                color: #559248 !important;
+                                margin: 12px 0px 20px;
+                            }
+                        }
+
+                        .pepePlus {
+                            h6 {
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 100%;
+                                text-align: center;
+                                text-transform: uppercase;
+                                margin: 12px 0px 20px;
+                                color: #CD7F32;
+                            }
+                        }
+
+                        .pepeKing {
+                            h6 {
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 100%;
+                                text-align: center;
+                                text-transform: uppercase;
+                                margin: 12px 0px 20px;
+                                color: #C0C0C0;
+                            }
+                        }
+
+                        .whalePepe {
+                            h6 {
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 100%;
+                                text-align: center;
+                                text-transform: uppercase;
+                                margin: 12px 0px 20px;
+                                color: #FECA37;
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        th:first-child {
+                            text-align: left;
+                            color: white;
+                        }
+
+                        td,
+                        th {
+                            border-bottom: 1px solid #202228;
+                            padding: 20px 20px 15px 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

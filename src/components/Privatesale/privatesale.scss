@@ -1,0 +1,923 @@
+.mainprivatesale {
+    background: url('../../Assets/bannerbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    height: 289px;
+
+    .launchpadheadings {
+        padding-left: 70px;
+
+        .launchpadhead {
+            font-family: 'sdark';
+            font-style: normal;
+            font-size: 50px;
+            line-height: 120%;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            text-shadow: 0px 2px 2px #387B2D, 0px 6px 0px #072801;
+            margin-bottom: 30px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #072801;
+        }
+
+        .launchpadpara {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            color: #FFFFFF;
+            max-width: 562px;
+            width: 100%;
+        }
+    }
+
+    .launchpad-btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        padding-left: 70px;
+        margin-top: 50px;
+    }
+}
+
+.trendinganimations {
+    margin: 0px;
+    padding: 0px;
+    background: #15181D;
+    border: 1px solid #262930;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 76px;
+
+    .trendinganimationsleft {
+        background: #171A1F;
+        border-right: 1px solid #262930;
+        padding: 30px;
+        position: absolute;
+        z-index: 999;
+
+        .trendinghead {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            white-space: nowrap;
+        }
+    }
+
+    .trendinganimationsright {
+        width: 100%;
+
+        .marquee {
+            --duration: 30s;
+            --gap: 3rem;
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: var(--gap);
+        }
+
+        .marquee__group {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: var(--gap);
+            min-width: 50%;
+            animation: scroll var(--duration) linear infinite;
+
+            .trendingcard {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                .tendingcardimg {
+                    border: 2px solid #3B3D42;
+                    border-radius: 100px;
+                    width: 34px;
+                    height: 34px;
+                    object-fit: cover;
+                    object-position: center;
+                    position: relative;
+
+                    .trendingcardinnerimg {
+                        border-radius: 100px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    .exchangeimg {
+                        border: 2px solid #191B21;
+                        border-radius: 100px;
+                        width: 14px;
+                        height: 14px;
+                        object-fit: cover;
+                        object-position: center;
+                        z-index: 999;
+                        position: absolute;
+                        bottom: 0px;
+                        right: -1px;
+
+                        .innerexchangeimg {
+                            border-radius: 100px;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                .trendingcardtext {
+                    .treandingcardhead {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 100%;
+                        margin-bottom: 2px;
+                        text-transform: uppercase;
+                        color: #4C9540;
+                    }
+
+                    .trendingcardpara {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .marquee__group {
+                animation-play-state: paused;
+            }
+        }
+
+        .marquee__group h4 {
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 1px solid #ccc;
+            padding: 3rem;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-100% - var(--gap)));
+            }
+        }
+    }
+}
+
+.currpresale {
+    .currpresaleheadings {
+        margin-bottom: 30px;
+
+        .currpresalehead {
+            font-family: 'sdark';
+            font-style: normal;
+            font-size: 20px;
+            line-height: 100%;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+
+        .currpresalepara {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            color: #8A8C90;
+        }
+    }
+
+    .maintabs {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 13px;
+        width: 100%;
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            padding: 0px;
+            margin: 0px;
+            background-color: transparent !important;
+
+            .outerbtn-green-btnonewidthnav {
+                background: #0B3704;
+                border-radius: 4px;
+                padding: 1px 1px 5px;
+                height: 45px;
+
+                .innerbtnnav {
+                    background: linear-gradient(180deg, #69C05A 0%, #469239 100%);
+                    box-shadow: 0px 2px 0px #35762A;
+                    border-radius: 3px;
+                    padding: 2px;
+                    height: 38px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    .btnspannav {
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.27) 100%);
+                        filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.01));
+                        border-radius: 5px;
+                        height: 17px;
+                        position: absolute;
+                        width: 100%;
+                        top: 2px;
+                        cursor: pointer;
+                    }
+
+                    .btntextnav {
+                        color: #FFFFFF !important;
+                        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+
+        .nav {
+            border: 1px solid #262930;
+            border-radius: 6px;
+            padding: 4px;
+            max-width: 322px;
+            width: 100%;
+
+            .nav-item {
+                max-width: 157px;
+                width: 50%;
+
+                .nav-link {
+                    padding: 0px;
+                    margin: 0px;
+
+                    .outerbtn-green-btnonewidthnav {
+                        border-radius: 4px;
+                        padding: 1px 1px 5px;
+                        height: 45px;
+
+                        .innerbtnnav {
+                            border-radius: 3px;
+                            padding: 2px;
+                            height: 38px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+
+                            .btnspannav {
+                                border-radius: 5px;
+                                height: 17px;
+                                position: absolute;
+                                width: 100%;
+                                top: 2px;
+                                cursor: pointer;
+                            }
+
+                            .btntextnav {
+                                font-family: 'sdark';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 100%;
+                                color: #8A8C90;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .searchinput {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+
+            .searchinputimg {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+            }
+
+            .searchinputmain {
+                width: 100%;
+                background: #15181D;
+                border: 1px solid #262930;
+                border-radius: 6px;
+                max-width: 800px;
+                padding: 17px 48px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                color: #FFFFFF;
+
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    color: #3D4047;
+                }
+            }
+        }
+
+        .filterdropdowns {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            width: 100%;
+
+            .dropdown {
+                .dropdown-toggle::after {
+                    display: none;
+                }
+
+                .dropdown-menu {
+                    background: #20242A;
+                    border: 1px solid #2B2F37;
+                    border-radius: 6px;
+                    width: 100%;
+
+                    .dropdown-item {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+
+                        &:hover {
+                            background: transparent;
+                        }
+                    }
+                }
+
+                .btn {
+                    background: transparent;
+                    margin: 0;
+                    padding: 0;
+                    border-radius: 0;
+                    border: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
+
+                    .formargin {
+                        max-width: 126.75px;
+                        width: 100%;
+                    }
+
+                    .arrowimg {
+                        position: absolute;
+                        top: 20px;
+                        right: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainpresalecards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+
+        .currpresalecard {
+            padding: 25px;
+            background: #17191E;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 20px;
+
+            &:hover {
+                background: #1C1F25;
+            }
+
+            .currpresaleupper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 25px;
+
+                .currpresaleupperleft {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 18px;
+
+                    .currpresalecardimg {
+                        width: 58px;
+                        height: 58px;
+                        border: 2px solid #3B3D42;
+                        border-radius: 100px;
+                        object-fit: cover;
+                        object-position: center;
+                        position: relative;
+
+                        .exchangeimg {
+                            border: 2px solid #191B21;
+                            border-radius: 100px;
+                            width: 20px;
+                            height: 20px;
+                            object-fit: cover;
+                            object-position: center;
+                            z-index: 99;
+                            position: absolute;
+                            bottom: 0px;
+                            right: -1px;
+
+                            .innerexchangeimg {
+                                border-radius: 100px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                                position: absolute;
+                            }
+                        }
+
+                        .currpresalecardinnerimg {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 100px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+
+                    .currpresalecardtexts {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        gap: 10px;
+                        flex-direction: column;
+
+                        .currpresalecardhead {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 100%;
+                            color: #FFFFFF;
+                        }
+
+                        .publicbox {
+                            background: rgba(76, 149, 64, 0.1) !important;
+                            border: 1px solid rgba(76, 149, 64, 0.2) !important;
+
+                            .publicpara {
+                                color: #4C9540 !important;
+                            }
+                        }
+
+                        .currpresalecardbox {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 6px 8px;
+                            gap: 3px;
+                            background: rgba(168, 25, 218, 0.1);
+                            border: 1px solid rgba(168, 25, 218, 0.2);
+                            border-radius: 50px;
+
+                            .currpresalecardpara {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 100%;
+                                color: #A819DA;
+                            }
+                        }
+                    }
+                }
+
+                .currpresaleupperright {
+                    .livebox {
+                        background: rgba(0, 199, 8, 0.1) !important;
+                        border: 1px solid #00C708 !important;
+
+                        .livepara {
+                            color: #00C708 !important;
+                        }
+                    }
+
+                    .currpresalecardboxright {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 6px 8px;
+                        gap: 3px;
+                        background: rgba(255, 214, 0, 0.1);
+                        border: 1px solid rgba(255, 214, 0, 0.2);
+                        border-radius: 50px;
+
+                        .currpresalecardpararight {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 100%;
+                            color: #FFD600;
+                        }
+                    }
+                }
+            }
+
+            .currpresalecenter {
+                margin-bottom: 20px;
+
+                .currpresalecenterpara {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: #8A8C91;
+                    margin-bottom: 25px;
+                }
+
+                .currpresaledata {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 5px;
+
+                    .currpresaledataleft {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #8A8C90;
+                    }
+
+                    .currpresaledataright {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .cardprogress {
+                display: flex;
+                gap: 8px;
+                flex-direction: column;
+                width: 100%;
+
+                .progress {
+                    background: #28292F;
+                    border-radius: 40px;
+                    height: 10px;
+
+                    .progress-bar {
+                        background: linear-gradient(90deg, #68BA5A -0.19%, #4C9540 99.81%);
+                        border-radius: 30px;
+                    }
+                }
+
+                .cardprogressheadings {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .cardprogresshead {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 100%;
+                        color: #FFFFFF;
+                    }
+
+                    .cardprogresspara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 100%;
+                        color: #8A8C90;
+                    }
+                }
+            }
+
+            .forcolor {
+                padding: 20px;
+                background: #1C1E24;
+                border: 1px solid #23252B;
+                border-radius: 6px;
+                margin-bottom: 25px;
+
+                .currpresalecardboxinner {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    .currpresalecardboxleft {
+                        .currpresalecardboxupperpara {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 120%;
+                            color: #898989;
+                            margin-bottom: 20px;
+                        }
+
+                        .currpresalecardboxlowerpara {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 100%;
+                            color: #898989;
+                            margin-bottom: 12px;
+                        }
+
+                        .currpresalecardboxtimerpara {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 120%;
+                            text-transform: uppercase;
+                            color: #4C9540;
+                        }
+                    }
+
+                    .currpresalecardboxright {
+                        .currpresalecardboxrighthead {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 120%;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+
+            .currpresalecardbox {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 20px;
+                background: #1C1E24;
+                border: 1px solid #23252B;
+                border-radius: 6px;
+                margin-bottom: 25px;
+
+                .currpresalecardboxleft {
+                    .currpresalecardboxupperpara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #898989;
+                        margin-bottom: 20px;
+                    }
+
+                    .currpresalecardboxlowerpara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 100%;
+                        color: #898989;
+                        margin-bottom: 12px;
+                    }
+
+                    .currpresalecardboxtimerpara {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 120%;
+                        text-transform: uppercase;
+                        color: #4C9540;
+                    }
+                }
+
+                .currpresalecardboxright {
+                    .currpresalecardboxrighthead {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .currpresalecardbtns {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width:1360px) {
+    .currpresale .maintabs .searchinput .searchinputmain {
+        max-width: 293px;
+    }
+
+    .currpresale .maintabs .searchinput {
+        max-width: 293px;
+    }
+
+    .currpresale .maintabs .filterdropdowns .dropdown .btn .formargin {
+        max-width: 300px;
+    }
+
+    .currpresale .maintabs .filterdropdowns .dropdown {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .currpresale .maintabs .filterdropdowns .dropdown .btn {
+        max-width: 300px;
+        width: 100%;
+
+        .material-textfield {
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+
+    .currpresale .maintabs .filterdropdowns {
+        max-width: 614px;
+    }
+}
+
+@media (max-width:1200px) {
+    .currpresale .maintabs {
+        flex-direction: column;
+    }
+
+    .currpresale .maintabs .nav {
+        max-width: 100%;
+    }
+
+    .currpresale .maintabs .nav .nav-item {
+        max-width: 50%;
+    }
+
+    .currpresale .maintabs .searchinput .searchinputmain {
+        max-width: 100%;
+    }
+
+    .currpresale .maintabs .searchinput {
+        max-width: 100%;
+    }
+
+    .currpresale .maintabs .filterdropdowns {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:1120px) {
+    .currpresale .mainpresalecards {
+        grid-template-columns: auto auto !important;
+    }
+}
+
+@media (max-width:992px) {
+    .mainprivatesale .mainbannerimg {
+        max-height: 300px !important;
+    }
+
+    .mainprivatesale .launchpadheadings {
+        padding: 60px 20px 50px;
+    }
+
+    .mainprivatesale .launchpad-btns {
+        padding: 0px 20px 70px;
+        margin-top: 0px;
+    }
+
+    .mainprivatesale {
+        height: 790px;
+    }
+}
+
+@media (max-width:720px) {
+    .currpresale .mainpresalecards {
+        grid-template-columns: auto !important;
+    }
+}
+
+@media (max-width:600px) {
+    .mainprivatesale {
+        height: 540px;
+        border-radius: 6px;
+    }
+
+    .mainprivatesale .launchpadheadings .launchpadhead {
+        font-size: 26px;
+        line-height: 120%;
+    }
+
+    .mainprivatesale .launchpadheadings .launchpadpara {
+        font-size: 15px;
+    }
+
+    .mainprivatesale .launchpad-btns {
+        flex-direction: column;
+        width: 100%;
+
+        .outerbtn-green-btnonewidth {
+            width: 100%;
+        }
+
+        .outerbtn {
+            width: 100%;
+        }
+    }
+
+    .trendinganimations {
+        margin-top: 10px !important;
+    }
+
+    .trendinganimations .trendinganimationsleft {
+        display: none;
+    }
+
+    .trendingmobilehead {
+        display: block !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 25px !important;
+    }
+
+    .trendinganimations .trendinganimationsright .marquee__group .trendingcard .trendingcardtext .trendingcardpara {
+        font-size: 14px !important;
+    }
+
+    .trendinganimations .trendinganimationsright .marquee__group .trendingcard .trendingcardtext .treandingcardhead {
+        font-size: 14px !important;
+    }
+
+    .currpresale .maintabs .filterdropdowns {
+        display: none !important;
+    }
+
+    .currpresale .mainpresalecards .currpresalecard .currpresaleupper {
+        justify-content: flex-start !important;
+        align-items: flex-end !important;
+    }
+
+    .currpresale .mainpresalecards .currpresalecard .currpresaleupper .currpresaleupperright .currpresalecardboxright {
+        margin-bottom: 2px;
+    }
+
+    .currpresale .maintabs .searchinput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        .filterimg {
+            display: block !important;
+            background: #15181D;
+            border: 1px solid #262930;
+            border-radius: 6px;
+            padding: 13.5px 12px;
+        }
+    }
+
+    .currpresale .maintabs .searchinput .searchinputmain {
+        padding-right: 17px !important;
+    }
+}
+
+@media (max-width:600px) {
+    .marquee {
+        --duration: 40s !important;
+    }
+}

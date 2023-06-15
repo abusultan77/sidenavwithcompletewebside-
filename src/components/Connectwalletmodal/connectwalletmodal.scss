@@ -1,0 +1,138 @@
+.connectwalletmodal {
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 614px;
+
+        .modal-content {
+            background: #20242B;
+            border: 1px solid #2B2F37;
+            border-radius: 6px;
+            padding: 30px 30px 0px;
+            margin: 0 auto;
+
+            .modal-header {
+                border-bottom: none;
+                padding: 0px;
+                margin-bottom: 30px;
+
+                .modal-title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                .btn-close {
+                    background: url('../../Assets/close-circle-white.svg');
+                    opacity: unset;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    padding: 0px;
+                    margin: 0px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .modal-body {
+                padding: 0px;
+
+                .uppercheckboxpara {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 8px;
+                    margin: 10px 0px 30px;
+
+                    .checkboxpara {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #8A8C90;
+
+                        span {
+                            color: #4C9540;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .modalpara {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                }
+
+                .choosenetwork {
+                    margin-bottom: 30px;
+
+                    .choosepara {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: #898989;
+                        margin-bottom: 15px;
+                    }
+
+                    .innerchoose {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+
+                        .choosemain {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 15px;
+                            max-width: 178px;
+                            width: 100%;
+                            height: 100px;
+                            background: #20242A;
+                            border: 1px solid #24282E;
+                            border-radius: 6px;
+
+                            &:hover {
+                                background: #252930;
+                                border: 1px solid #4C9540;
+                                cursor: pointer;
+                                transition: 0.7s;
+                            }
+
+                            .choosemainpara {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 100%;
+                                color: #FFFFFF;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+    .connectwalletmodal .modal-dialog .modal-content .modal-body .choosenetwork .innerchoose{
+        flex-direction: column;
+    }
+    .connectwalletmodal .modal-dialog .modal-content .modal-body .choosenetwork .innerchoose .choosemain{
+        max-width: 100%;
+    }
+    .connectwalletmodal .modal-dialog .modal-content{
+        padding: 30px 20px 0px;
+    }
+}

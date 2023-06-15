@@ -1,0 +1,757 @@
+.buyxrypto {
+    min-height: 100vh;
+    padding-bottom: 30px;
+
+    .main-head {
+        background: #15181D;
+        border-radius: 6px;
+        padding: 50px 60px;
+        width: 100%;
+
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            color: #8A8C90;
+            margin-bottom: 20px;
+        }
+    }
+
+    .cryptocard {
+        background: #191B21;
+        border-radius: 6px;
+        padding: 30px;
+        max-width: 664px;
+        width: 100%;
+
+        .head {
+            h2 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 30px;
+            }
+
+            .material-textfield {
+                position: relative;
+                width: 100%;
+            }
+
+            .material-textfield label {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #191B21;
+                padding: 14px 18px;
+                width: 80%;
+                margin: 0 1px;
+                transition: 0.1s ease-out;
+                transform-origin: left top;
+                pointer-events: none;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 120%;
+                color: #4C9540;
+                ;
+            }
+
+            .material-textfield input {
+                outline: none;
+                transition: 0.1s ease-out;
+                background: #191B21;
+                border: 1px solid #2B2F35;
+                border-radius: 6px;
+                padding: 25px 18px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 110%;
+                color: #FFFFFF;
+                width: 100%;
+                box-shadow: none !important;
+                padding-right: 169px;
+
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 125%;
+                    display: flex;
+                    align-items: center;
+                    color: #BCBCBC !important;
+                }
+            }
+
+            .material-textfield input:focus+label {
+                // color: #6200EE;
+                top: 0;
+                transform: translateY(-50%) scale(0.9);
+                padding: 0 2px;
+                width: unset;
+                left: 14px;
+            }
+
+            .material-textfield input:not(:placeholder-shown)+label {
+                top: 0;
+                transform: translateY(-50%) scale(0.9);
+            }
+
+            .usdbtn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+
+                button {
+                    background: #191B21;
+                    border: 1px solid #4C9540;
+                    border-radius: 4px;
+                    padding: 12px 13px;
+                    width: 100%;
+                    width: 144px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 125%;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+
+                    .parentbtn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        .left {
+                            display: flex;
+                            gap: 10px;
+                            justify-content: center;
+                            align-items: baseline;
+                        }
+                    }
+                }
+            }
+
+            .estimateinput {
+                .estimate {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 28px;
+                        right: 20px;
+                    }
+
+                    input {
+                        background: transparent;
+                        border: 1px solid #2B2F35;
+                        border-radius: 6px;
+                        padding: 15px;
+                        max-width: 604px;
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 110%;
+                        color: #FFFFFF;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        padding-right: 54px;
+
+                        &::placeholder {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 110%;
+                            color: #8A8C90;
+                        }
+                    }
+                }
+
+                .material-textfield {
+                    position: relative;
+                    width: 100%;
+                }
+
+                .material-textfield label {
+                    position: absolute;
+                    left: 130px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #191B21;
+                    padding: 14px 18px;
+                    width: 80%;
+                    margin: 0 1px;
+                    transition: 0.1s ease-out;
+                    transform-origin: left top;
+                    pointer-events: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 120%;
+                    color: #4C9540;
+                    ;
+                }
+
+                .material-textfield input {
+                    outline: none;
+                    transition: 0.1s ease-out;
+                    background: #191B21;
+                    border: 1px solid #2B2F35;
+                    border-radius: 6px;
+                    padding: 18px !important;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 110%;
+                    color: #FFFFFF;
+                    width: 100%;
+                    box-shadow: none !important;
+                    padding-left: 145px !important;
+
+                    &::placeholder {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 125%;
+                        display: flex;
+                        align-items: center;
+                        color: #494C54;
+                    }
+                }
+
+                .material-textfield input:focus+label {
+                    // color: #6200EE;
+                    top: 0;
+                    transform: translateY(-50%) scale(0.9);
+                    padding: 0 2px;
+                    width: unset;
+                    left: 14px;
+                }
+
+                .material-textfield input:not(:placeholder-shown)+label {
+                    top: 0;
+                    transform: translateY(-50%) scale(0.9);
+                }
+
+                .frmimage {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+
+                }
+
+                .arrowdown {
+                    position: absolute;
+                    top: 24px;
+                    right: 18px;
+                }
+            }
+
+            .buybtns {
+                margin-top: 30px;
+            }
+        }
+
+        .spendcard {
+            margin-bottom: 30px;
+            background: #191B21;
+            border: 1px solid #2B2F35;
+            border-radius: 6px;
+            padding: 18px;
+            width: 100%;
+
+            .spendparent {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .innerspendleft {
+                    .right {
+                        justify-content: end !important;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 125%;
+                        color: #4C9540;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+
+                    h6 {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 110%;
+                        margin-top: 8px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .amount {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .amountleft {
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #8A8C90;
+                }
+            }
+
+            .amountright {
+                h6 {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .recievecard {
+
+            background: #191B21;
+            border: 1px solid #2B2F35;
+            border-radius: 6px;
+            width: 100%;
+            padding: 18px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+            p {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 120%;
+                color: #8A8C90;
+            }
+        }
+
+        .checkss {
+            margin-bottom: 31px;
+
+            .chec {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 110%;
+                color: #8A8C90;
+            }
+        }
+    }
+
+}
+
+
+.cryptomodal {
+    .modal-dialog {
+        max-width: 453px;
+        // width: 100%;
+
+        .modal-content {
+            background: #20242B !important;
+            border: 1px solid #2B2F37;
+            border-radius: 6px;
+            padding: 30px;
+
+            .modal-header {
+                border-bottom: none;
+                padding: 0px;
+                margin-bottom: 32px;
+
+                .modal-title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                .btn-close {
+                    background: url(../../close-circle.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: contain;
+                    width: 22px;
+                    height: 22px;
+                    box-shadow: none !important;
+                    opacity: unset;
+                    position: absolute;
+                    padding: 0px;
+                    margin: 0px;
+                    top: 29px;
+                    right: 31px;
+                }
+            }
+
+            .modal-body {
+                padding: 0px;
+
+                .modalcard {
+                    background: #20242A;
+                    border: 1px solid #2B2F35;
+                    border-radius: 6px;
+                    padding: 13px 20px;
+                    width: 100%;
+                    margin-bottom: 5px;
+
+                    .parentmodal {
+                        display: flex;
+                        align-items: center;
+                        gap: 11px;
+
+                        .left {
+                            img {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+
+                        .right {
+                            h6 {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 100%;
+                                letter-spacing: 0.1px;
+                                color: #FFFFFF;
+                                margin-bottom: 2px;
+                            }
+
+                            p {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 100%;
+                                letter-spacing: 0.1px;
+                                color: #7C7C7C;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.paymentmodal {
+    .modal-dialog {
+        max-width: 614px;
+        // width: 100%;
+
+        .modal-content {
+            background: #20242B;
+            border: 1px solid #2B2F37;
+            border-radius: 6px;
+            padding: 30px;
+
+            .modal-header {
+                border-bottom: none;
+                padding: 0px;
+                margin-bottom: 32px;
+
+                .modal-title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                .btn-close {
+                    background: url(../../close-circle.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: contain;
+                    width: 22px;
+                    height: 22px;
+                    box-shadow: none !important;
+                    opacity: unset;
+                    position: absolute;
+                    padding: 0px;
+                    margin: 0px;
+                    top: 29px;
+                    right: 31px;
+                }
+            }
+
+            .modal-body {
+                padding: 0px;
+
+                .main-input {
+                    .first {
+                        position: relative;
+
+                        input {
+                            border: 1px solid #2B2F35;
+                            border-radius: 6px;
+                            padding: 17px 18px;
+                            width: 100%;
+                            color: #FFFFFF;
+                            background: transparent;
+                            padding-left: 56px;
+                            margin-bottom: 6px;
+
+                            &::placeholder {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 15px;
+                                display: flex;
+                                align-items: center;
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        img {
+                            position: absolute;
+                            top: 23px;
+                            left: 20px;
+                        }
+                    }
+
+                    .second {
+                        position: relative;
+
+                        input {
+                            border: 1px solid #2B2F35;
+                            border-radius: 6px;
+                            padding: 17px 18px;
+                            width: 100%;
+                            color: #FFFFFF;
+                            background: transparent;
+                            padding-left: 70px;
+                            margin-bottom: 6px;
+
+                            &::placeholder {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 15px;
+                                display: flex;
+                                align-items: center;
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        img {
+                            position: absolute;
+                            top: 23px;
+                            left: 20px;
+                        }
+                    }
+
+                    .add {
+                        button {
+                            background: #20242A;
+                            border: 1.5px solid #4C9540;
+                            border-radius: 6px;
+                            padding: 18px 50px;
+                            width: 100%;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 100%;
+                            color: #4C9540;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cardmodal {
+    .modal-dialog {
+        max-width: 504px;
+
+        // width: 100%;
+        .modal-content {
+            background: #20242B;
+            border: 1px solid #2B2F37;
+            border-radius: 6px;
+            padding: 30px;
+
+            .modal-header {
+                border-bottom: none;
+                padding: 0px;
+                margin-bottom: 32px;
+
+                .modal-title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                .btn-close {
+                    background: url(../../close-circle.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: contain;
+                    width: 22px;
+                    height: 22px;
+                    box-shadow: none !important;
+                    opacity: unset;
+                    position: absolute;
+                    padding: 0px;
+                    margin: 0px;
+                    top: 29px;
+                    right: 31px;
+                }
+            }
+
+            .modal-body {
+                padding: 0px;
+
+                .material-textfield {
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+
+                .material-textfield label {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: transparent;
+                    padding: 14px 18px;
+                    width: 80%;
+                    margin: 0 1px;
+                    transition: 0.1s ease-out;
+                    transform-origin: left top;
+                    pointer-events: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 120%;
+                    color: #4C9540;
+                    background: #20242B;
+                }
+
+                .material-textfield input {
+                    outline: none;
+                    transition: 0.1s ease-out;
+                    background: transparent;
+                    border: 1px solid #2B2F35;
+                    border-radius: 6px;
+                    padding: 14px 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 110%;
+                    color: #FFFFFF;
+                    width: 100%;
+                    box-shadow: none !important;
+
+                    &::placeholder {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 125%;
+                        display: flex;
+                        align-items: center;
+                        color: #494C54;
+                    }
+                }
+
+                .material-textfield input:focus+label {
+                    // color: #6200EE;
+                    top: 0;
+                    transform: translateY(-50%) scale(0.9);
+                    padding: 0 2px;
+                    width: unset;
+                    left: 14px;
+                }
+
+                .material-textfield input:not(:placeholder-shown)+label {
+                    top: 0;
+                    transform: translateY(-50%) scale(0.9);
+                }
+
+                .parent {
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .cryptomodal .modal-dialog .modal-content {
+        padding: 22px 20px;
+    }
+
+    .buyxrypto .main-head h2 {
+        font-size: 22px;
+    }
+
+    .buyxrypto .main-head p {
+        font-size: 16px;
+    }
+
+    .buyxrypto .cryptocard {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .buyxrypto .main-head {
+        padding: 30px 20px;
+    }
+
+    .buyxrypto .cryptocard .head .usdbtn button {
+        width: 97px;
+        padding: 12px 10px;
+    }
+
+    .buyxrypto .cryptocard .spendcard .spendparent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buyxrypto .cryptocard .spendcard .spendparent .innerspendleft .right {
+        justify-content: flex-start !important;
+        margin-top: 15px;
+    }
+}

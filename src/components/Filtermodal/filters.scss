@@ -1,0 +1,106 @@
+.filtermodal {
+    .modal-dialog-centered {
+        align-items: end;
+    }
+
+    .modal-dialog {
+        margin: 0px;
+        height: 100%;
+
+        .modal-content {
+            background: #20242B;
+            border-radius: 10px 10px 0px 0px;
+
+            .modal-header {
+                border-bottom: none;
+                padding: 22px 20px 0px;
+
+                .modal-title {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+
+                .btn-close {
+                    background-image: url('../../close-circle.svg');
+                    opacity: unset;
+                    padding: 0px;
+                    margin: 0px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 24px;
+                    height: 24px;
+                    background-size: cover;
+                }
+            }
+
+            .modal-body {
+                padding: 30px 20px;
+                .filterdropdowns {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    max-width: 600px;
+                    width: 100%;
+        
+                    .dropdown {
+                        .dropdown-toggle::after {
+                            display: none;
+                        }
+        
+                        .dropdown-menu {
+                            background: #20242A;
+                            border: 1px solid #2B2F37;
+                            border-radius: 6px;
+                            width: 100%;
+        
+                            .dropdown-item {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 100%;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+        
+                                &:hover {
+                                    background: transparent;
+                                }
+                            }
+                        }
+        
+                        .btn {
+                            background: transparent;
+                            margin: 0;
+                            padding: 0;
+                            border-radius: 0;
+                            border: none !important;
+                            outline: none !important;
+                            box-shadow: none !important;
+                            max-width: 100%;
+                            width: 100%;
+        
+                            .formargin {
+                                max-width: 100%;
+                                width: 100%;
+                                background-color: transparent;
+                            }
+
+                            label{
+                                background: #20242B;
+                            }
+        
+                            .arrowimg {
+                                position: absolute;
+                                top: 20px;
+                                right: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
