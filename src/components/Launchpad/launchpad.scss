@@ -1220,6 +1220,67 @@
             }
         }
     }
+ 
+}
+.css-q8hpuo-MuiFormControl-root {
+
+    border: 1px solid #262930 !important;
+    border-radius: 6px;
+    background: #15181D;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+   
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 120% !important;
+
+    color: #8A8C90 !important;
+    top: 4px !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+
+
+    font-family: 'Rajdhani'!important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 125% !important;
+
+    color: #FFFFFF !important;
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+
+   border: 1.5px solid #4C9540 !important;;
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+
+    background: #20242A !important;
+    border: 1px solid #2B2F37 !important;
+    border-radius: 6px !important;
+    
+}
+li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+
+    padding: 5px  !important;
+    font-family: 'Rajdhani' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    line-height: 125% !important;
+
+    color: #FFFFFF !important;
+}
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 125%;
+ 
+    color: #FFFFFF;
 }
 
 
@@ -1256,6 +1317,7 @@
     .currpresale .maintabs .filterdropdowns {
         max-width: 614px;
     }
+
 }
 
 @media (max-width:1200px) {

@@ -81,7 +81,7 @@
         position: relative;
         // max-width: 92%;
         // width: 100%;
-        width: calc(100% - 115px);
+        width: calc(100% - 110px);
 
         .mainbtns {
             top: 0px;
@@ -222,7 +222,8 @@
 
 @media (max-width: 991px) {
     .maindashboard .content-side {
-        padding-top: 97px;
+        padding-top: 75px;
+        width: 100%;
     }
 
     .maindashboard .sidebar {
@@ -329,9 +330,7 @@
         }
     }
 
-    .maindashboard .content-side {
-        width: 100%;
-    }
+
 
     .maindashboard .sidebar .nav-link {
         flex-direction: row;

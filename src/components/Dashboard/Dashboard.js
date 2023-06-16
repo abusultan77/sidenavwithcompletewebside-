@@ -324,22 +324,22 @@ const Dashboard = () => {
                                                 <Launchpad />
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="second">
-                                                <Privatesale />
+                                                {/* <Privatesale /> */}
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="third">
-                                                <Buycrypto />
+                                                {/* <Buycrypto /> */}
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="swap">
-                                                <Swap />
+                                                {/* <Swap /> */}
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="fourth">
-                                                <Leaderboard />
+                                                {/* <Leaderboard /> */}
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="fifth">
-                                                <Create />
+                                                {/* <Create /> */}
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="sixth">
-                                                <Staking />
+                                                {/* <Staking /> */}
                                             </Tab.Pane>
                                             {/* <Tab.Pane eventKey="seventh">
                                                 <Nftlaunchpad />
